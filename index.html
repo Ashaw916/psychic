@@ -7,11 +7,91 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="containter">
+        <!--row for the heading-->
+        <div class="row">
+            <div class="col-md-2">
 
+            </div>
+            <!--centered heading-->
+            <div class="col-md-8 text-center" style="padding: 2rem;">
+                <h1>Guess what letter I'm thinking of</h1>
+            </div>
+            <div class="col-md-2">
+                
+            </div>
 
+        </div>
+        <!--row for the answer-->
+        <div class="row">
+            <div class="col-md-2">
 
-   <script src="assets/javascript/game.js"></script>
-</body>
-</html>
+            </div>
+            <!--centered answer-->
+            <div class="col-md-8 text-center" style="padding: 2rem;">
+                <!--answer h2 and answer-text span-->
+                <h2 id="answer">It was <span id="answer-text"></span></h2>
+            </div>
+            <div class="col-md-2">
+                
+            </div>
+        </div>
+        <!--centered guess-->
+        <div class="row">
+            <div class="col-md-2">
 
-<!---->
+            </div>
+            <div class="col-md-8 text-center" style="padding: 2rem;">
+                <!--guess h2 and guess-text span-->
+                <h2 id="guess">You guessed <span id="guess-text"></span></h2>
+            </div>
+            <div class="col-md-2">
+                
+            </div>
+        </div>
+        <!--row for wins, losses, guesses left, and guessed so far titles-->
+        <div class="row" style="padding-top: 15rem;">
+            <!--wins title-->
+            <div class="col-md-3 text-center" style="padding: 2rem;">
+                <h3>Wins: </h3>
+            </div>
+            <!--losses title-->
+            <div class="col-md-3 text-center" style="padding: 2rem;">
+                <h3>Losses: </h3>
+            </div>
+            <!--guesses left title-->
+            <div class="col-md-3 text-center" style="padding: 2rem;">
+                <h3>Guesses Left: </h3>
+            </div>
+            <!--Guessed so far title-->
+            <div class="col-md-3 text-center" style="padding: 2rem;">
+                <h3>Guessed so far: </h3>
+            </div>
+        </div>
+        <!--row for previous rows values-->
+        <div class="row" style="padding-top: 0rem;">
+            <!--wins value-->
+            <div class="col-md-3 text-center" style="padding: 2rem;">
+                <h4><span id="wins"></span></h4>
+            </div>
+            <!--losses value-->
+            <div class="col-md-3 text-center" style="padding: 2rem;">
+                <h4><span id="losses"></span></h4>
+            </div>
+            <!--guesses left value-->
+            <div class="col-md-3 text-center" style="padding: 2rem;">
+                <h4><span id="guesses-left"></span></h4>
+            </div>
+            <!--Guessed so far value-->
+            <div class="col-md-3 text-center" style="padding: 2rem;">
+                <h4><span id="guessed"></span></h4>
+            </div>
+        </div>
+    </div>
+    
+    
+       <script src="assets/javascript/game.js"></script>
+    </body>
+    </html>
+    
+   
