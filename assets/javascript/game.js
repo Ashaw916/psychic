@@ -5,7 +5,7 @@ var chars = ["a", "b", "c", "d", "e", "f", "g","h", "i", "k", "l", "m", "n", "o"
 var wins = 0;
 var losses = 0;
 var guessesLeft = 100;
-var guessed = 0;
+var guessed = "";
 
 // references to html locations
 var guessText = document.getElementById("guess-text");
@@ -20,28 +20,32 @@ document.onkeyup = function(event) {
 
     guessText.textContent = "You guessed " + event.key;
     
-
     //generating answer
     var answer = chars[Math.floor(Math.random() * chars.length)];
         answerText.textContent = "It was " + answer;
 
-    //log wins and losses
+    //log wins 
     if ((guessText) === (answerText)) {
         wins++;
         winsText.textContent = wins;
     }
     
+    //log losses
     else {
         losses++;
+       
     }
 
-    
-
+    //display stats
     winsText.textContent = wins;
     lossesText.textContent = losses;
     guessesLeftText.textContent = guessesLeft--;
+    guessedText.textContent = guessed;
 
-
-    
-    
 };
+
+
+document.addEventListener("onkeyup", function() {
+    localStorage.setItem("guesses", event.key);
+});
+    
