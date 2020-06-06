@@ -25,7 +25,7 @@ document.onkeyup = function(event) {
         answerText.textContent = "It was " + answer;
 
     //log wins 
-    if ((guessText) === (answerText)) {
+    if ((guessText) === (answer)) {
         wins++;
         winsText.textContent = wins;
     }
